@@ -13,8 +13,10 @@ This site is currently live: [Visit Here](https://salmannotkhan.github.io/typing
 ```zsh
 git clone https://github.com/salmannotkhan/typing-test.git
 cd typing-test
-npm install
-npm start     # to start local server at `localhost:3000`
+docker build . -t typing-test
+docker run --rm -it -p 3000:3000 typing-test     # to start local server at `localhost:3000`
+
+
 npm run build # to create production build run
 ```
 
